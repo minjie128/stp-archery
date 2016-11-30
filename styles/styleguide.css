@@ -1,0 +1,140 @@
+html {
+  font-size: 16px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header img {
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+main {
+  margin: 2rem 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+}
+
+.color-grid div {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
+}
+
+.color-grid p {
+  margin-left: 1rem;
+}
+
+.brick-red { background-color: #962D3E; }
+
+.dark-blue-gray { background-color: #343642; }
+
+.medium-gray { background-color: #979C9C; }
+
+.dutch-white { background-color: #F2EBC7; }
+
+.blue-green { background-color: #348899; }
+
+.typography p {
+  margin-left: 1rem;
+}
+
+.typography-examples {
+  margin-left: 1rem;
+  padding: 1rem;
+  border-style: solid;
+  border-width: thin;
+}
+
+#heading-example {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#p-example {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 100;
+  letter-spacing: 0.3px;
+}
+
+li i{
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+}
+
+i.fa {
+  font-size: 2rem;
+}
+
+.btn-default {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  background-color: white;
+  color: black;
+  border: 2px solid lightgrey;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  transition-duration: 0.3s;
+}
+
+.btn-default:hover {
+  background-color: lightgrey;
+  text-decoration: underline;
+}
+
+.btn-call-to-action {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  background-color: #962D3E;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border-style: none;
+  transition-duration: 0.3s;
+}
+
+.btn-call-to-action:hover {
+  background-color: darkred;
+  text-decoration: underline;
+}
+
+footer p{
+  margin: 1rem;
+  text-align: center;
+}
