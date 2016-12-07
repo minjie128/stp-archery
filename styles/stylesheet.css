@@ -264,23 +264,127 @@ main {
   box-sizing: border-box;
 }
 
+.classes, .private-lessons {
+  margin-right: 2rem;
+}
 
+.class1, .class3, .lesson2 {
+  background-color: #F2EBC7;
+  border: 0;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.class2, .lesson1, .lesson3 {
+  background-color: #F2E2C7;
+  border: 0;
+  margin: 0 1rem 1rem 1rem;
+}
 
 button {
   display: block;
 }
 
+.btn-default {
+  width: 130px;
+  height: 30px;  
+  margin: 1rem;
+  font-size: 0.8rem;
+  background-color: white;
+  color: black;
+  border: 1px solid #979C9C;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  transition-duration: 0.2s;
+}
+
+.btn-default:hover {
+  background-color: lightgrey;
+  text-decoration: underline;
+}
+
+.btn-call-to-action {
+  width: 130px;  
+  height: 30px;
+  margin: 1rem;
+  font-size: 0.8rem;
+  background-color: #962D3E;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border-style: none;
+  transition-duration: 0.3s;
+}
+
+.btn-call-to-action:hover {
+  background-color: darkred;
+  text-decoration: underline;
+}
+
 img.col-2 {
   width: 15vw;
-  height: 12vw;
+  min-width: 120px;
+  height: 15vw;
+  min-height: 120px;
+  border: 0;
+  padding: 0;
+}
+
+div.col-6 {
+  border: 0;
+  padding: 0 0 1rem 2rem;
+}
+
+div.col-4 {
+  border: 0;
+  padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 780px) {
+
+  div.col-4 {
+    padding-top: 0;
+  }
+  
 }
 
 .instructor1, .instructor2, .instructor3 {
-  min-height: 15vw;
+  min-height: 20vw;
+  border: 0;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.instructor1, .instructor3 {
+  background-color: #F2EBC7;
+}
+
+.instructor2 {
+  background-color: #F2E2C7;
 }
 
 .instructors img {
-  max-height: 15vw;
+  height: 15vw;
+  width: 15vw;
+  max-height: 20vw;
+  padding: 2rem 0 0 2rem;
+}
+
+div.col-10 {
+  border: 0;
+}
+
+.col-10 h3 {
+  padding-left: 2rem;
+}
+
+.col-10 p {
+  padding-left: 0.5rem;
 }
 
 .about-brief {
@@ -298,6 +402,16 @@ main h2 {
   letter-spacing: 2px;
   font-variant: small-caps;
   color: #343642;
+}
+
+.about-pages {
+  margin-bottom: 2rem;
+}
+
+.about-pages p {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  line-height: 1.4rem;
 }
 
 .google-map {
