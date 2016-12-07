@@ -3,51 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>Contact &middot; Straight to the Point Archery</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <script src="https://use.fontawesome.com/1ccdb6bc24.js"></script>
   </head>
   <body>
     <header>
-      <h1><a href="index.html">Straight to the Point Archery</a></h1>
       <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+      <h1><a href="index.html">Straight to the Point Archery</a></h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="about.html" class="dropmenu">About <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <div class="dropdown-content">
+              <a href="about.html#about-page1">About Us STP</a>
+              <a href="about.html#about-page2">Giap Nguyen</a>
+              <a href="about.html#about-page3">Meet Our Team</a>
+              <a href="about.html#about-page4">Equal opportunity</a>
+            </div>
+          </li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>      
     </header>
     <main>
-      <h2>GET IN TOUCH</h2>
+      <h2>Just ask. Get answers.</h2>
       <section>
-        <div>
+        <div class="contact-info col-4">
           <i class="fa fa-map-marker"></i>
           <h3>Address</h3>
           <p>528 Nock Point Ln</p>
           <p>Tacoma, WA 98412</p>
         </div>
-        <div>
+        <div class="contact-info col-4">
           <i class="fa fa-envelope-o"></i>
           <h3>Email</h3>
-          <p>archery-education@example.com</p>
+          <p>archery-education</p>
+          <p>@example.com</p>
         </div>
-        <div>
+        <div class="contact-info col-4">
           <i class="fa fa-phone"></i>
           <h3>Phone</h3>
           <p>(253) 555-1010</p>
         </div>
-      </section>
-      <div id="map"></div>
+      </section>     
+      <div id="map" class="google-map"></div>     
     </main>
     <footer>
       <nav>
-        <ul>
-          <li><a href="services.html">Classes</a></li>
-          <li><a href="about.html">Instructors</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>      
+        <a href="services.html">Classes</a> &middot;
+        <a href="about.html">Instructors</a> &middot;
+        <a href="about.html">About Us</a> &middot;
+        <a href="contact.html">Contact Us</a>
       </nav>
       <p>Straight to the Point Archery &#169; 2016</p>
       <div class="footer-contact">
@@ -64,6 +74,19 @@
           <span>(253) 555-1010</span>
         </div>
       </div>      
-    </footer>    
+    </footer>
+    
+    <script>
+    function myMap() {
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = {
+        center: new google.maps.LatLng(47.258728, -122.465973), 
+        zoom: 10
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>    
+  
   </body>
 </html>
