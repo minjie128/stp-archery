@@ -402,6 +402,7 @@ main h2 {
   letter-spacing: 2px;
   font-variant: small-caps;
   color: #343642;
+  font-weight: bold;
 }
 
 .about-pages {
@@ -457,7 +458,11 @@ main h2 {
     min-height: 200px;
     max-height: 320px;
     border-radius: 200px;
-    margin: 1rem 1rem 3rem 6rem;
+    margin: 1rem 1rem 3rem 6rem;    
+  }
+  
+  .contact-info i {
+    padding-top: 2rem;
   }
   
   .contact-info p {
