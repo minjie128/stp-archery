@@ -353,19 +353,19 @@ div.col-4 {
   
 }
 
-.instructor1, .instructor2, .instructor3 {
+.instructor {
   min-height: 20vw;
   border: 0;
   margin: 1rem;
   overflow: hidden;
 }
 
-.instructor1, .instructor3 {
-  background-color: #F2EBC7;
+.instructor:nth-child(odd) {
+  background-color: #F2E2C7;
 }
 
-.instructor2 {
-  background-color: #F2E2C7;
+.instructor:nth-child(even) {
+  background-color: #F2EBC7;  
 }
 
 .instructors img {
